@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Karrilee";
+    text-decoration: none;
+}
+
+body {
+    background-image: url("../images/bfm.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: Karrilee;
+    src: url("../fonts/Karrilee.otf");
+}
+
+@font-face {
+    font-family: SFProDisplay;
+    src: url("../fonts/SFPRODISPLAYMEDIUM.OTF");
+}
+
+@font-face {
+    font-family: NCSB;
+    src: url("../fonts/NotCourierSans-Bold.otf");
+}
+
+@font-face {
+    font-family: NCS;
+    src: url("../fonts/NotCourierSans.otf");
+}
+
+.global-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo socials";
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    min-height: 50px;
+    background-color: transparent;
+}
+
+.logo {
+    float: left;
+    width: 100%;
+    grid-area: logo;
+    justify-self: flex-start;
+}
+
+.logo > a {
+    font-size: 3rem;
+}
+
+.socials {
+    grid-area: socials;
+    justify-self: flex-end;
+    float: right;
+}
+
+.global-buttons {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.social-buttons {
+    min-width: 50px;
+    min-height: 50px;
+    border: none;
+    background-color: transparent;
+}
+
+.social-buttons:hover {
+    opacity: 0.5;
+}
+
+.hp-section {
+    max-height: 100vh;
+    min-height: 100vh;
+    height: 100vh;
+    width: calc(100%);
+    background-image: url("../images/file4.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.global-footer {
+    height: 25vh;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "logo"
+    "links"
+    ;
+    background-color: black;
+}
+
+.footer-logo {
+    grid-area: logo;
+}
+
+.footer-logo a {
+    font-size: 2rem;
+}
+
+.footer-logo p {
+    font-family: NCSB;
+}
+
+.footer-links a {
+    font-family: NCS;
+    font-size: 1rem;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    float: left;
+}
+
+.site-music {
+    display: none;
+}
