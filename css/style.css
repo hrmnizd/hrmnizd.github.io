@@ -150,6 +150,7 @@ body {
         justify-self: center;
         display: block;
         width: 100%;
+        text-align: center;
     }
 
     .socials {
@@ -157,6 +158,7 @@ body {
     }
 
     .footer-logo a {
+        text-align: center;
         font-size: 1rem;
     }
 
