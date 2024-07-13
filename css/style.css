@@ -134,3 +134,33 @@ body {
 .site-music {
     display: none;
 }
+
+@media screen and (max-width: 800px) {
+    .global-header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo";
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .logo {
+        justify-self: center;
+        display: block;
+        width: 100%;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .footer-logo {
+        font-size: 1rem;
+    }
+
+    .global-footer {
+        height: auto;
+    }
+}
