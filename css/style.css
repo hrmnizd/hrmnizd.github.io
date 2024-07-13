@@ -156,7 +156,7 @@ body {
         display: none;
     }
 
-    .footer-logo {
+    .footer-logo a {
         font-size: 1rem;
     }
 
