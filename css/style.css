@@ -37,12 +37,13 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "logo socials";
+    grid-template-areas: "logo links";
     padding: 20px;
     position: fixed;
     width: 100%;
     min-height: 50px;
     background-color: transparent;
+    z-index: 9999;
 }
 
 .logo {
@@ -56,10 +57,15 @@ body {
     font-size: 3rem;
 }
 
-.socials {
-    grid-area: socials;
+.links {
+    grid-area: links;
     justify-self: flex-end;
     float: right;
+}
+
+.links > a {
+    font-family: NCS;
+    font-size: 1rem;
 }
 
 .global-buttons {
@@ -135,11 +141,48 @@ body {
     display: none;
 }
 
+/* About Me Styling */
+
+.am-section {
+    max-height: 100vh;
+    min-height: 100vh;
+    height: 100vh;
+    width: calc(100%);
+    background-image: url("../images/file5.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Page not ready Styling */
+
+
+#blurpnr {
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: calc(100%);
+    z-index: 9998;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+}
+
+#blurpnr > h1 {
+    font-family: NCS;
+    text-align: center;
+}
+
+/* Mobile Optimization */
+
 @media screen and (max-width: 800px) {
     .global-header {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: "logo";
+        grid-template-areas: "logo"
+        "links";
         justify-content: center;
         align-items: center;
         justify-items: center;
@@ -153,8 +196,8 @@ body {
         text-align: center;
     }
 
-    .socials {
-        display: none;
+    .links {
+        justify-self: center;
     }
 
     .footer-logo a {
