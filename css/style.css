@@ -44,6 +44,7 @@ body {
     min-height: 50px;
     background-color: transparent;
     z-index: 9999;
+    opacity: 1;
 }
 
 .logo {
@@ -149,6 +150,11 @@ body {
 .site-music {
     display: none;
 }
+
+.global-header.hidden {
+    opacity: 0; /* Hide the header */
+    transition: opacity 0.5s ease-in-out; /* Add transition for smooth effect (optional) */
+  }
 
 /* Socials */
 
