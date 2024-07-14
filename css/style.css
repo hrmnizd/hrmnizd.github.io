@@ -152,8 +152,8 @@ body {
 }
 
 .global-header.hidden {
-    opacity: 0; /* Hide the header */
-    transition: opacity 0.5s ease-in-out; /* Add transition for smooth effect (optional) */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
   }
 
 /* Socials */
@@ -180,9 +180,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-        align-items: center;
-        justify-items: center;
-        align-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
 }
 
 #blurpnr > h1 {
