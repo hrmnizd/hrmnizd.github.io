@@ -127,7 +127,7 @@ body {
     font-size: 2rem;
 }
 
-.footer-logo p {
+.footer-logo span p {
     font-family: NCSB;
 }
 
@@ -160,7 +160,7 @@ body {
   #seswaywf {
     font-family: NCSB;
   }
-  
+
 /* Socials */
 
 .am-section {
