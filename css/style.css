@@ -66,6 +66,7 @@ body {
 .links > a {
     font-family: NCS;
     font-size: 1rem;
+    padding: 0 5px;
 }
 
 .global-buttons {
@@ -74,14 +75,22 @@ body {
     border-radius: 10px;
 }
 
-.social-buttons {
+.social-button-styling {
     min-width: 50px;
     min-height: 50px;
     border: none;
     background-color: transparent;
 }
 
-.social-buttons:hover {
+.global-socials-style {
+    color: white;
+    width: 25px;
+    height: 25px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.global-socials-style:hover {
     opacity: 0.5;
 }
 
