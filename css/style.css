@@ -43,7 +43,7 @@ body {
     width: 100%;
     min-height: 50px;
     background-color: transparent;
-    z-index: 9999;
+    z-index: 9998;
     opacity: 1;
 }
 
@@ -188,6 +188,43 @@ body {
 #blurpnr > h1 {
     font-family: NCS;
     text-align: center;
+}
+
+.noplace-add {
+    display: none;
+    z-index: 9999;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+
+.active {
+    display: block;
+}
+
+#noplace-header {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    z-index: 9999;
+    opacity: 1;
+}
+
+#noplace-main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#noplace-main-img-container {
+    grid-area: noplace;
+}
+
+#noplace-main-img-container img {
+    width: calc(20%);
 }
 
 /* Mobile Optimization */

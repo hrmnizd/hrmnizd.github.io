@@ -9,3 +9,8 @@ window.addEventListener("scroll", function() {
       header.classList.remove("hidden");
     }
   });
+
+  function showNoPlace() {
+    let cover = document.getElementById("noplace-add-cover");
+    cover.classList.toggle("active");
+  }
