@@ -310,7 +310,7 @@ body {
     }
 
     .logo a p:hover::after {
-        height: 0;
+        width: 0;
     }
 
     .footer-links a {
