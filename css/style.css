@@ -120,39 +120,6 @@ body {
     opacity: 0.5;
 }
 
-.other-links ul {
-    list-style-type: none;
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-
-.other-links li {
-    float: left;
-}
-
-.other-links ul li a {
-    font-family: NCS;
-    position: relative;
-    width: max-content;
-}
-
-.other-links ul li a::after {
-    content: '';
-    background: white;
-    width: 0;
-    height: 3px;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    border-radius: 100px;
-    transition: all 0.5s ease;
-}
-
-.other-links ul li a:hover::after {
-    width: 100%;
-}
-
 .hp-section {
     max-height: 100vh;
     min-height: 100vh;
