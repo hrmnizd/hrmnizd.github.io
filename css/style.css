@@ -4,11 +4,36 @@
     font-family: 'Poppins';
     text-decoration: none;
     color: inherit;
+    cursor: none;
 }
 
 body {
     margin: 0 auto;
     max-width: 1800px;
+    cursor: none;
+}
+
+.cursor-dot {
+    width: 5px;
+    height: 5px;
+    background-color: hsl(0, 0%, 30%);
+}
+
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsl(0, 0%, 30%);
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
 }
 
 .global-header {
@@ -26,7 +51,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "logo btns";
     align-items: center;
-    z-index: 9999;
+    z-index: 9998;
 }
 
 .global-header svg {
@@ -35,9 +60,15 @@ body {
     max-height: 20px;
 }
 
+
 .header-logo {
     grid-area: logo;
     justify-self: start;
+}
+
+.header-logo h1 {
+    font-size: 20px;
+    font-family: 'Poppins-Bold';
 }
 
 .header-btns {
@@ -119,7 +150,6 @@ body {
     position: relative;
     transition: all 0.5s ease;
     z-index: 9999;
-    cursor: pointer;
 }
 
 #footer-logo h1::after {
@@ -211,10 +241,6 @@ body {
     width: 100%;
 }
 
-#noplace {
-    cursor: pointer;
-}
-
 @media screen and (max-width: 440px) {
 
     .global-header {
@@ -237,6 +263,11 @@ body {
     }
 
     #noplace {
+        display: none;
+    }
+
+    .cursor-dot,
+    .cursor-outline {
         display: none;
     }
 }
