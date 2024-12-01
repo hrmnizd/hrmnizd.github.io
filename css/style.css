@@ -41,9 +41,11 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    max-width: 1800px;
     height: clamp(10%, 10%, auto);
     padding: 20px 10px;
     background-color: white;
+    margin: 0 auto;
 
     /* GRID */
 
