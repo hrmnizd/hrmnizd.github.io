@@ -1,9 +1,3 @@
-function noPlace() {
-    const hrmnizd = document.getElementById("hrmnizd-rise");
-
-    hrmnizd.textContent = "hrmny on noplace app."
-}
-
 const cursorDot = document.querySelector("[data-cursor-dot]");
 const cursorOutline = document.querySelector("[data-cursor-outline]");
 
@@ -14,9 +8,6 @@ window.addEventListener("mousemove", function (e){
 
     cursorDot.style.left = `${posX}px`
     cursorDot.style.top = `${posY}px`
-
-   // cursorOutline.style.left = `${posX}px`
-   // cursorOutline.style.top = `${posY}px`
 
     cursorOutline.animate({
         left: `${posX}px`,
