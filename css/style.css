@@ -5,6 +5,10 @@
     font-weight: 300;
 }
 
+:root {
+    --apps-size: 100px; 
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -97,14 +101,14 @@ body {
 
 .bsky {
     background-image: url("../images/icons/bsky.png");
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .tt {
     background-image: url("../images/icons/tt.png");
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -144,4 +148,37 @@ body {
     height: max-content;
     padding: 20px;
     border-radius: 15px;
+}
+
+@media screen and (max-width: 600px){
+    .main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: max-content;
+
+        gap: 20px;
+    }
+
+    .content {
+        height: min-content;
+    }
+
+    .bsky {
+        flex:1 1 auto;
+    }
+
+    .tt {
+        flex:1 1 auto;
+    }
+
 }
