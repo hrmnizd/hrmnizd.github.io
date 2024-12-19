@@ -1,211 +1,147 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Noto Sans';
-    font-weight: 300;
-}
-
-:root {
-    --apps-size: 100px; 
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    background-image: url("../images/wallpapers/Image\ Windows\ Vista\ Wallpaper.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-    width: 100%;
-    height: 100vh;
+    color: #fff;
+    text-decoration: inherit;
+    font-family: 'Poppins';
 }
 
 .global-header {
+    position: fixed;
     width: 100%;
-    height: 60px;
-    padding: 10px 25px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: linear-gradient(180deg, rgba(99, 102, 104, 0.9) 0%, rgba(69, 71, 71, 0.9) 50.52%, rgba(52, 52, 52, 0.9) 53.12%, rgba(0, 0, 0, 0.9) 100%);
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), inset 0px 2px 1px rgba(255, 255, 255, 0.3), inset 0px -2px 1px rgba(0, 0, 0, 0.4);
-}
-
-.header-logo {
-    width: calc(100% - 60px);
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    flex-grow: 1;
-}
-
-.header-nav{
-    width: calc(100% - 60px);
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    flex-grow: 1;
-}
-
-.style-btn {
-    color: white;
-    font-size: 20px;
-    text-decoration: inherit;
-}
-
-.main {
-    width: 100%;
-    height: calc(100vh - 60px);
-    border-radius: 10px solid red;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.images {
-    width: 250px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.playButton {
-    width: 50px;
-    height: 50px;
-    background-image: url("../images/icons/play.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    border: none;
-    background-color: transparent;
-}
-
-.apps {
-    width: 230px;
-    height: 230px;
-}
-
-.bsky {
-    background-image: url("../images/icons/bsky.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.tt {
-    background-image: url("../images/icons/tt.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.content {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.bubble1 h1, .bubble_404 h1 {
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 100;
-}
-
-.bubble1 p, .bubble_404 a {
-    font-weight:300;
-}
-
-.bubbles a, p {
-    font-weight: 300;
-    font-size: 20px;
-}
-
-.bubbles a {
-    text-decoration: inherit;
-    color: white;
-    font-weight: 200;
-    font-size: 30px;
-}
-
-.bubbles h1 {
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 100;
-}
-
-.links_404 a {
-    text-decoration: inherit;
-    color: white;
-    font-weight: 200;
-    font-size: 30px;
-}
-
-.bubbles {
-    background: linear-gradient(180deg, rgba(83, 85, 87, 0.9) 0%, rgba(14, 15, 15, 0.9) 100%);
-    color: white;
-    width: 100%;
-    height: max-content;
-    padding: 20px;
-    border-radius: 15px;
-}
-
-.links_404 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
+    min-height: 20px;
     height: min-content;
-    gap: 30px;
-    flex-wrap: wrap;
+    padding: 20px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .header-content {
+        width: max-content;
+        height: max-content;
+        padding: 15px 70px;
+        border-radius: 200px;
+
+        background-color: black;
+        text-align: center;
+        transition: background 0.5s ease;
+
+        .logo-txt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-txt a {
+            font-size: 20px;
+        }
+    }
+
+    .header-nav {
+        width: min-content;
+        height: max-content;
+        padding: 15px;
+        border-radius: 200px;
+
+        background-color: black;
+        display: flex;
+        gap: 20px;
+
+        align-items: center;
+        justify-content: flex-end;
+
+        .nav-items {
+            font-size: 20px;
+            width: min-content;
+            height: max-content;
+        }
+    }
 }
 
-@media screen and (max-width: 600px){
-    .main {
+.header-content:hover {
+    background: linear-gradient(270deg, #c866ff, #7174ff, #ffb8b8);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+    }
+
+.home-section {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+
+    /* background: linear-gradient(123deg,#000000,#0f0717,#190232); */
+    background-size: 180% 180%;
+    animation: homesection 27s ease infinite;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .playground-div {
+        width: 100%;
+        height: 100vh;
+        display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
+
+        .playground-div p {
+            color: black;
+        }
+    }
+}
+@keyframes homesection {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@media screen and (max-width: 900px) {
+    .global-header {
+        flex-direction: column;
     }
 
-    .images {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
-        height: max-content;
-
-        gap: 20px;
+    .header-content {
+        width: 50%;
+        height: auto;
     }
 
-    .content {
-        height: min-content;
+    .header-nav {
+        width: 50%;
+        height: auto;
     }
 
-    .bsky {
-        flex:1 1 auto;
+    .logo-txt a {
+        font-size: 10px;
     }
 
-    .tt {
-        flex:1 1 auto;
+    #playground-lottie {
+        width: 100px;
     }
-
 }
