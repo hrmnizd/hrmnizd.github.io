@@ -133,7 +133,12 @@
         font-size: 30px;
 
         position: relative;
+        cursor: pointer;
     }
+}
+
+.options-404 > a {
+    cursor: pointer;
 }
 
 .btn-404::after {
@@ -200,6 +205,14 @@
         gap: 20px;
     }
 
+}
+
+.hero-img-404 {
+    display: none;
+}
+
+.tom-img-404 {
+    display: none;
 }
 
 @media screen and (max-width: 900px) {
