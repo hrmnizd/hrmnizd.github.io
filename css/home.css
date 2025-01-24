@@ -1,0 +1,49 @@
+.wrapper {
+    display: flex;
+    max-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: transparent;
+}
+
+.home-section {
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-divs {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.imgs > span {
+    font-size: 300px;
+}
+
+.txts {
+    text-align: center;
+}
+
+.txts h1 {
+    font-size: 50px;
+}
+
+.txts h3 {
+    font-size: 35px;
+}
