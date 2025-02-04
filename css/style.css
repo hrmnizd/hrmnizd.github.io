@@ -63,6 +63,7 @@
     height: 100vh;
     background-color: var(--main-color);
     display: flex;
+    flex-direction: column;
     padding: 30px 25px;
 
     .hero-text {
