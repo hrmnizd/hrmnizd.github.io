@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.3.0/dist/dotlottie-wc.js" type="module"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://hrmnizd.com/css/global.css">
     <link rel="stylesheet" href="https://hrmnizd.com/css/home.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
-    <title>hrmnizd</title>
+    <link rel="stylesheet" href="https://hrmnizd.com/css/global.css">
+    <link rel="stylesheet" href="https://hrmnizd.com/css/fonts.css">
+    <title>hello@hrmnizd</title>
 </head>
 <body>
-    <main>
-    <div class="wrapper">
+    <div class="home-wrapper">
         <header class="global-header">
             <div class="header-items logo">
-                <a href="https://hrmnizd.com">hrmnizd.com</a>
+                <a href="https://hrmnizd.com/">hello@hrmnizd</a>
             </div>
-            <div class="header-items socials">
-                <div class="social-items email">
-                    <a href="https://hrmnizd.com/contact.html">
-                        <img src="https://hrmnizd.com/images/envelope.svg" alt="email-button" width="35">
+            <div class="header-items nav">
+                <div class="FindMe nav-items">
+                    <a href="https://hrmnizd.com/hello">
+                        <button class="btn-style mail">
+                            email
+                        </button>
                     </a>
                 </div>
-                <div class="social-items bluesky">
-                    <a href="https://bsky.app/profile/hrmnizd.com" target="_blank">
-                        <img src="https://hrmnizd.com/images/butterfly.svg" alt="bluesky button" width="35">
+                <div class="REM nav-items">
+                    <a href="https://hrmnizd.com/rem">
+                        <button class="btn-style socials">
+                            socials
+                        </button>
                     </a>
                 </div>
             </div>
         </header>
         <section class="home-section">
-            <div class="section-divs">
-                <dotlottie-player src="https://lottie.host/f0fc4560-9d67-499e-96c2-b0fa01d64ff2/KXncgTRBft.lottie" background="transparent" speed="1" style="width: 600px; height: 600px" autoplay></dotlottie-player>
+            <div class="lottie">
+                <dotlottie-wc src="https://lottie.host/883230cf-f937-448a-bdf1-d08f26793c5a/ndOXDu1e2X.lottie" autoplay></dotlottie-wc>
+            </div>
+            <div class="info">
+                <h1>Learning SwiftUI</h1>
             </div>
         </section>
     </div>
-    </main>
 </body>
 </html>

@@ -1,16 +1,9 @@
 @font-face {
-    font-family: 'Poppins';
-    src: url("../fonts/Poppins-Regular.woff2") format('woff2');
-    font-style: normal;
+    font-family: "SF-Pro-Display-Bold";
+    src: url("../fonts/SF-Pro-Display-Bold.otf");
 }
 
 @font-face {
-    font-family: 'Poppins-Bold';
-    src: url("../fonts/Poppins-Bold.woff2") format('woff2');
-    font-style: bold;
-}
-
-@font-face {
-    font-family: 'Poppins-Med';
-    src: url("../fonts/Poppins-Medium.woff2") format('woff2');
+    font-family: "SF-Pro-Display-Regular";
+    src: url("../fonts/SF-Pro-Display-Regular.otf");
 }
