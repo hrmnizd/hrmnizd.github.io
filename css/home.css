@@ -1,37 +1,14 @@
-.home-wrapper {
-    width: 100%;
-    min-height: 100vh;
-    max-height: 100vh;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-}
-
 .home-section {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    max-height: 100vh;
+
+    background-image: url("../images/website-banner.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-    flex-direction: column;
-}
-
-.info h1  {
-    font-family: "SF-Pro-Display-Regular";
-}
-
-dotlottie-wc {
-    width: 600px;
-}
-
-@media screen and (max-width: 800px) {
-    dotlottie-wc {
-        width: 300px;
-    }
 }
