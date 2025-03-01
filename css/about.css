@@ -1,5 +1,9 @@
 .contact-card {
     flex-direction: column;
+
+    max-height: 80%;
+
+    overflow: auto;
 }
 
 .contact-card div svg {
