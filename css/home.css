@@ -19,16 +19,33 @@
 
 .home-section {
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .home-section a img {
     border-radius: 20px;
 }
 
+h1 {
+    margin-bottom: 10px;
+}
+
+ol > li {
+    color: white;
+    transition: opacity 0.2s ease-in-out;
+}
+
+ol > li:hover {
+    opacity: 0.8;
+}
+
 /* */
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     h1 {
         font-size: clamp(5px, 1rem, 2rem);
     }
@@ -43,5 +60,11 @@
 
     .stream-es-deluxe img {
         display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    li {
+        font-size: 10px;
     }
 }

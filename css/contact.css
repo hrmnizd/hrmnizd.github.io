@@ -23,3 +23,36 @@
 .contact-card h3,h2 {
     font-family: "NotCourierSans-Bold";
 }
+
+.home-section {
+    flex-direction: column;
+}
+
+h1 {
+    font-family: "NotCourierSans-Bold";
+    margin-bottom: 20px;
+}
+
+h2 span {
+    font-family: "NotCourierSans-Bold";
+}
+
+/* */
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: clamp(5px, 1rem, 2rem);
+    }
+
+    h2 {
+        font-size: clamp(5px, 0.5rem, 1rem);
+    }
+
+    .stream-es-deluxe {
+        display: none;
+    }
+
+    .stream-es-deluxe img {
+        display: none;
+    }
+}

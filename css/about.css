@@ -10,6 +10,10 @@
     width: 20px;
 }
 
+h1 {
+    font-family: "NotCourierSans-Bold";
+}
+
 h2 span {
     font-family: "NotCourierSans-Bold";
 }
@@ -25,4 +29,28 @@ svg {
     border-radius: 1000px;
 
     margin: 20px 0;
+}
+
+.home-section {
+    flex-direction: column;
+}
+
+/* */
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: clamp(5px, 1rem, 2rem);
+    }
+
+    h2 {
+        font-size: clamp(5px, 0.5rem, 1rem);
+    }
+
+    .stream-es-deluxe {
+        display: none;
+    }
+
+    .stream-es-deluxe img {
+        display: none;
+    }
 }
