@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg">
+  <title>bimi-svg-tiny-12-ps</title>
+  <g>
+    <rect width="256" height="256" fill="white"/>
+    <rect width="256" height="256" fill="url(#pattern0_28_2)"/>
+    <rect width="256" height="256" fill="black" fill-opacity="0.1"/>
+    <path d="M128.031 156.188C128.688 156.188 129.625 155.75 130.312 155.344C147.906 144.094 159.062 131 159.062 117.688C159.062 106.625 151.469 98.8125 141.656 98.8125C135.562 98.8125 130.875 102.188 128.031 107.344C125.25 102.219 120.5 98.8125 114.406 98.8125C104.594 98.8125 97 106.625 97 117.688C97 131 108.156 144.094 125.781 155.344C126.438 155.75 127.375 156.188 128.031 156.188Z" fill="white"/>
+  </g>
+  <defs/>
+</svg>
