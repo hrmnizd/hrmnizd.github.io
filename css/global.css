@@ -1,185 +1,60 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Karrilee";
-    color: white;
-    text-decoration: inherit;
+    box-sizing: border-box;
+    font-family: "SF Pro";
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: url("../fonts/SF-Pro.ttf");
 }
 
 body {
-    background-image: url("../images/bfmn.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("../images/background.webp");
+    background-position: top center;
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-/* Fonts */
-
-@font-face {
-    font-family: "Karrilee";
-    src: url("https://hrmnizd.com/Karrilee.otf");
-}
-
-@font-face {
-    font-family: "NotCourierSans-Bold";
-    src: url("https://hrmnizd.com/NotCourierSans-Bold.otf");
-}
-
-/* End */
-
 .global-header {
-    width: 100%;
-    height: auto;
     position: fixed;
-    display: grid;
-
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: minmax(10px, 1fr);
-
-    grid-template-areas: "contact logo socials";
-
-    align-items: center;
-    justify-content: center;
-
-    padding: 1.2rem 4rem;
-}
-
-.logo {
-    grid-area: logo;
     display: flex;
+    width: 100%;
+    z-index: 1000;
 
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    padding: 1rem 2rem;
 }
 
-.header-logo-desktop {
-    display: block;
+.global-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    gap: 1.5rem; 
 }
 
-.medium-logo {
-    max-width: 300px;
-}
-
-.contact {
-    grid-area: contact;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: flex-start;
-
-    gap: 20px;
-}
-
-.contact > a {
-    font-family: "NotCourierSans-Bold";
+.global-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 0; 
+    transition: color 0.3s;
     font-size: 20px;
-
 }
 
-.socials {
-    grid-area: socials;
-    justify-self: flex-end;
-    display: flex;
-    align-items: center;
-    justify-items: flex-end;
+.global-nav ul li a:hover {
+    color: #eaeaea;
 }
 
-.global-footer {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-    height: auto;
-    padding: 2rem;
-    align-items: center;
-    justify-content: center;
-    background-color: #000;
-}
-
-.text-footer p {
-    font-family: "NotCourierSans-Bold";
-}
-
-.twitter-link:hover {
-    opacity: 0.8;
-}
-
-.twitter-link-footer:hover {
-    opacity: 0.8;
-}
-
-.home-section {
-    width: 100%;
-    height: 100vh;
-    max-height: 100vh;
-
-    background-image: url("../images/bfmn.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 20px;
-}
-
-
-/* Contact Card Style */
-
-.contact-card {
+.global-logo {
+    height: 30px; 
     width: auto;
-    height: auto;
-
-    padding: 3rem;
-
-    background: rgba( 255, 255, 255, 0.25 );
-    backdrop-filter: blur( 9px );
-    -webkit-backdrop-filter: blur( 9px );
-    border-radius: 10px;
-
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-}
-
-.contact-card img {
-    border-radius: 100%;
-    justify-self: flex-start;
-}
-
-.contact-card h3,h2 {
-    font-family: "NotCourierSans-Bold";
-
-    font-size: clamp(10px, 20px, 3rem);
-}
-
-/* End */
-
-
-/* Devices */
-
-@media screen and (max-width: 650px) {
-    .global-header {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-
-        grid-template-areas: "logo";
-
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contact {
-        display: none;
-    }
-
-    .twitter-link {
-        display: none;
-    }
+    width: auto;
+    display: block;
 }
